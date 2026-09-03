@@ -1,11 +1,8 @@
-async function pokemon() {
-  const requestURL =
-    "https://pokeapi.co/api/v2/pokemon/tapu-koko";
-  const request = new Request(requestURL);
-
-  const response = await fetch(request);
-  const superHeroes = await response.json();
-
-  populateHeader(pokemon);
-  populateHeroes(pokemon);
+const requestURL = "https://pokeapi.co/api/v2/pokemon/tapu-koko";
+async function getData() {
+const res = await fetch(url);
+console.log(await res);
+const data = await res.json();
+console.log(data);
 }
+getData();
